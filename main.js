@@ -64,6 +64,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
+  const loginFunc = () => {
+    let loginBtn = document.getElementById("login-btn-submit");
+
+    loginBtn.addEventListener("click", () => {
+      let username = document.getElementById("username-input-login").value;
+      let password = document.getElementById("password-input-login").value;
+      if (username.length <= 4) {
+        alert("يجب ان يكون اسم المستخدم اكثر من اربع احرف !");
+        return;
+      }
+      if (password.length <= 3) {
+        alert("يجب ان تكون كلمة المرور اكثر من ثلاثة احرف !");
+        return;
+      }
+      localStorage.setItem("username", username);
+      updateUI();
+    });
+  };
+
   const updateUI = () => {
     let savedName = localStorage.getItem("username");
     let logoutBtn = document.getElementById("LogOutBtn");
@@ -210,6 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
   callCategory();
   callYear();
   registerFunc();
+  loginFunc();
   updateUI();
   loadEvents();
 });
