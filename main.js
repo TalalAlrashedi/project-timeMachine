@@ -232,4 +232,19 @@ document.addEventListener("DOMContentLoaded", () => {
   loginFunc();
   updateUI();
   loadEvents();
+  addComment();
 });
+function addComment() {
+  const input = document.getElementById("commentInput");
+  const comment = input.value.trim();
+  if (comment) {
+    const list = document.getElementById("commentList");
+    const paragraph = document.createElement("p");
+    paragraph.textContent = comment;
+    list.appendChild(paragraph);
+    input.value = "";
+    localStorage.getItem("username", username);
+
+    updateUI();
+  }
+}

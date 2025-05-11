@@ -278,7 +278,7 @@
 
       <!--AddEventBtn-->
 
-      <div class="position-fixed bottom-0 end-1 m-3" id="add-event-btn">
+      <div class="position-fixed bottom-0 end-1 m-3 z-1" id="add-event-btn">
         <button
           data-bs-toggle="modal"
           data-bs-target="#CreateEventBtn"
@@ -297,6 +297,7 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex mt-3">
           <div class="container-fluid">
+
             <a class="navbar-brand" id="greeting" href="#">Time Machine</a>
 
             <button
@@ -360,6 +361,7 @@
       </header>
 
       <!--//HeaderClose//-->
+         <!--MainContaint-->
       <main class="container" dir="rtl">
         <div class="intro">
           <h2>رحلة الذكاء الاصطناعي: من الخيال إلى الواقع (1950 - 2025)</h2>
@@ -472,6 +474,11 @@
                   الذهاب الى التفاصيل</a
                 >
               </button>
+              <div class="comment-section" style="margin-top: 15px">
+                <textarea id="commentInput" placeholder="أضف تعليقًا..." style="width: 100%; border-radius: 10px; padding: 10px;"></textarea>
+                <button onclick="addComment()" style="margin-top: 5px;" class="btn btn-success btn-sm">إضافة تعليق</button>
+                <p id="commentList" style="margin-top: 10px; padding-left: 20px;"></p>
+              </div>
             </div>
           </div>
 
@@ -502,6 +509,11 @@
                   الذهاب الى التفاصيل</a
                 >
               </button>
+              <div class="comment-section" style="margin-top: 15px">
+                <textarea id="commentInput" placeholder="أضف تعليقًا..." style="width: 100%; border-radius: 10px; padding: 10px;"></textarea>
+                <button onclick="addComment()" style="margin-top: 5px;" class="btn btn-success btn-sm">إضافة تعليق</button>
+                <p id="commentList" style="margin-top: 10px; padding-left: 20px;"></p>
+              </div>
             </div>
           </div>
 
@@ -529,6 +541,11 @@
                   الذهاب الى التفاصيل</a
                 >
               </button>
+              <div class="comment-section" style="margin-top: 15px">
+                <textarea id="commentInput" placeholder="أضف تعليقًا..." style="width: 100%; border-radius: 10px; padding: 10px;"></textarea>
+                <button onclick="addComment()" style="margin-top: 5px;" class="btn btn-success btn-sm">إضافة تعليق</button>
+                <p id="commentList" style="margin-top: 10px; padding-left: 20px;"></p>
+              </div>
             </div>
           </div>
 
@@ -559,6 +576,11 @@
                   الذهاب الى التفاصيل</a
                 >
               </button>
+              <div class="comment-section" style="margin-top: 15px">
+                <textarea id="commentInput" placeholder="أضف تعليقًا..." style="width: 100%; border-radius: 10px; padding: 10px;"></textarea>
+                <button onclick="addComment()" style="margin-top: 5px;" class="btn btn-success btn-sm">إضافة تعليق</button>
+                <p id="commentList" style="margin-top: 10px; padding-left: 20px;"></p>
+              </div>
             </div>
           </div>
 
@@ -589,9 +611,15 @@ src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkL
                 >
               </button>
             </div>
+            <div class="comment-section" style="margin-top: 15px">
+              <textarea id="commentInput" placeholder="أضف تعليقًا..." style="width: 100%; border-radius: 10px; padding: 10px;"></textarea>
+              <button onclick="addComment()" style="margin-top: 5px;" class="btn btn-success btn-sm">إضافة تعليق</button>
+              <p id="commentList" style="margin-top: 10px; padding-left: 20px;"></p>
+            </div>
           </div>
         </div>
       </main>
+      <!--//MainContaintClose//-->
     </div>
     <!--//ContainerClose//-->
 

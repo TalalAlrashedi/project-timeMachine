@@ -1,27 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
 * {
   padding: 0%;
   margin: 0%;
 }
 
-/* :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #1abc9c;
-    --light-bg: #f8f9fa;
-    --dark-bg: #343a40;
-    --text-color: #333;
-    --light-text: #f8f9fa;
-  }
-   */
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--light-bg);
-  }
 
-  .intro {
-    text-align: center;
-    margin: 2rem 0;
-  }
+body {
+  font-family: "Cairo", sans-serif !important;
+  background-color: rgb(233, 233, 233) !important;
+}
+
+.intro {
+  text-align: center;
+  margin: 2rem 0;
+}
 /* 
 .card-container-ai {
   display: grid;
@@ -54,7 +47,6 @@ row-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1%;
   margin-top: 2rem;
-
 }
 
 .card-ai {
@@ -88,14 +80,13 @@ row-gap: 1rem;
 }
 
 .card-title {
-  color: var(--primary-color);
+
   margin-bottom: 0.8rem;
   font-weight: bold;
 }
 
 .card-desc {
-  color: var(--text-color);
+    font-size: 1rem;
   margin-bottom: 1rem;
   flex-grow: 1;
 }
-
