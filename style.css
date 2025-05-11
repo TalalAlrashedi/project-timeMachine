@@ -88,3 +88,10 @@ row-gap: 1rem;
   margin-bottom: 1rem;
   flex-grow: 1;
 }
+
+.card-category{
+    background-color: rgba(124, 121, 121, 0.174);
+    border-radius: 50px;
+    padding: 2% 1%;
+    display: ruby-text;
+}
